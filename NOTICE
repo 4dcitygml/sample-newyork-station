@@ -1,0 +1,43 @@
+sample-newyork-station
+Copyright (c) 2026 4dcitygml
+
+Project code, configuration, CI workflows, and documentation are licensed
+under the Apache License 2.0 (LICENSE, Section A). The city dataset keeps the
+terms of its original source (LICENSE, Section B).
+
+City dataset provenance
+-----------------------
+- Dataset: NYC 3-D Building Model (CityGML 1.0), Grand Central Terminal area,
+  extracted from delivery area tile DA12
+- Publisher: NYC Office of Technology and Innovation (formerly DoITT),
+  published on NYC Open Data
+  (https://data.cityofnewyork.us/City-Government/3-D-Building-Model/tnru-abg2)
+- Original terms: NYC Open Data Terms of Use
+  (https://opendata.cityofnewyork.us/overview/)
+- Attribution: NYC 3D Building Massing Model — NYC Office of Technology and
+  Innovation (DoITT), NYC Open Data
+- Acquired: 2026-08-21 (official DA12 distribution; the original download is
+  not part of this repository)
+- Coordinate reference system: EPSG:2263 (US survey feet, unchanged from the
+  original)
+- Stable building IDs: gen:BIN (as distributed). The placeholder value
+  1000000, which repeats in the original data, is declared in
+  4dcitygml.json (building_id.invalid_values); tools deterministically fall
+  back to the original gml:id for those 3 buildings. The GML itself is not
+  rewritten for this.
+
+Modifications from the original distribution (changes were made):
+1. Subset extraction — only the Grand Central Terminal area (974 buildings)
+   of tile DA12 is included, as citygml/da12_grand_central_area.gml. Building
+   contents and identifiers are unchanged by the extraction.
+2. Ongoing collaborative edits — buildings are updated through reviewed pull
+   requests; every change is recorded in the git history of this repository
+   (per-building commits). docs/provenance-rules.md defines how sources are
+   recorded inside the data.
+
+Newly contributed images must follow docs/data-contribution-policy.md
+(rights, no identifiable persons / plates, removal-request contact).
+
+This repository is a practice environment and is not affiliated with or
+endorsed by the City of New York. CityGML is a standard of the Open
+Geospatial Consortium (OGC); this project is not affiliated with OGC.

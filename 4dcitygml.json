@@ -1,0 +1,15 @@
+{
+  "id": "newyork-station",
+  "name": { "en": "Grand Central demo", "ja": "グランドセントラルデモ", "de": "Demo Grand Central" },
+  "repo": "4dcitygml/sample-newyork-station",
+  "logo": "logo.png",
+  "country": "US",
+  "lang": "en",
+  "crs": "EPSG:2263",
+  "units": "ftUS",
+  "building_id": { "type": "gen:BIN", "invalid_values": ["1000000"] },
+  "data_dirs": ["citygml"],
+  "map": { "tiles": "osm", "center": [40.7527, -73.9772], "zoom": 16 },
+  "attribution": "NYC 3D Building Massing Model — NYC Office of Technology and Innovation (DoITT), NYC Open Data",
+  "license": "NYC Open Data Terms"
+}
