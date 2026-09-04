@@ -10,10 +10,12 @@ maintained via pull requests. **This is a practice repository that is reset
 manually when needed** — designed for learning the editing workflows and tools before
 contributing to production city data.
 
-- **Get started (practice):** run `install/start-mac.command` (macOS) or
-  `install/start-windows.bat` (Windows). The shared editing tool will be
-  downloaded automatically and connect to this city — no city selection needed.
-  Step-by-step, from clone to your first proposal: [Getting started](docs/getting-started.md).
+- **Get started (practice):** download the
+  [starter kit](https://github.com/4dcitygml/sample-newyork-station/releases/download/starter-kit/newyork-station-starter.zip),
+  unzip it, and double-click `start-mac.command` (macOS) or `start-windows.bat`
+  (Windows). The shared editing tool is downloaded automatically and connects to
+  this city; you do not need to clone the repository (the tool creates your own copy).
+  Step by step, including working with Git directly: [Getting started](docs/getting-started.md).
 - **Data source & license:** see `4dcitygml.json` (`attribution` / `license`).
   NYC 3D Building Massing Model — NYC Office of Technology and Innovation
   (DoITT), NYC Open Data.
