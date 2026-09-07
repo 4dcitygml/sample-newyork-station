@@ -10,11 +10,21 @@ maintained via pull requests. **This is a practice repository that is reset
 manually when needed** — designed for learning the editing workflows and tools before
 contributing to production city data.
 
-- **Get started (practice):** download the
-  [starter kit](https://github.com/4dcitygml/sample-newyork-station/releases/download/starter-kit/newyork-station-starter.zip),
-  unzip it, and double-click `start-mac.command` (macOS) or `start-windows.bat`
-  (Windows). The shared editing tool is downloaded automatically and connects to
-  this city; you do not need to clone the repository (the tool creates your own copy).
+- **Get started (practice):** open a terminal and paste one line.
+  macOS (Terminal):
+  ```
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/4dcitygml/tools/install-v1/install/citygml.sh)" -- 4dcitygml/sample-newyork-station
+  ```
+  Windows (PowerShell):
+  ```
+  & ([scriptblock]::Create((irm https://raw.githubusercontent.com/4dcitygml/tools/install-v1/install/citygml.ps1))) 4dcitygml/sample-newyork-station
+  ```
+  The shared editing tools are downloaded from `4dcitygml/tools`, verified, and
+  connect to this city; you do not need to clone the repository (the tools create
+  your own copy) and after the first time a desktop icon opens them. The line
+  installs or starts; running it again is always safe. Newer versions are offered
+  inside the tools. If you installed with the starter kit before September 2026,
+  run the line once more (the old installation stays in place and can be deleted).
   Step by step, including working with Git directly: [Getting started](docs/getting-started.md).
 - **Data source & license:** see `4dcitygml.json` (`attribution` / `license`).
   NYC 3D Building Massing Model — NYC Office of Technology and Innovation
