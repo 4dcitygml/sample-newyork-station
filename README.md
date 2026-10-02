@@ -55,16 +55,14 @@ To edit attributes and propose changes, use the shared editing tool (see
 
 ## Practice Environment
 
-The daily reset and automatic merge are currently **disabled**. This repository
-is a sandbox for practicing the editing tools and PR workflows with maintainer
-review, without affecting production data.
+This repository is a sandbox for practicing the editing tools and PR workflows
+without affecting production data.
 
-- **Manual reset:** only a maintainer can reset `main` to `baseline`, after
-  entering the confirmation word `RESET`. Open pull requests receive guidance
-  when a reset is performed.
-- **Manual merge:** every pull request is checked by the maintainer before it is
-  merged. The auto-merge implementation is retained for future review, but it
-  does not start while its dedicated repository variable is unset.
+- **Every pull request is reviewed:** the maintainer checks every proposal
+  before it is merged.
+- **Manual reset:** only a maintainer, after entering the confirmation word
+  `RESET`, opens a pull request that returns the data to `baseline`; the history
+  stays. Open proposals that change nothing but data are closed with a note.
 - **After each reset, sync your fork:** If you have a fork of this repository,
   click **Sync fork** → **Update branch** on GitHub before your next practice
   session. Otherwise, edits you made before the reset (which were wiped from
