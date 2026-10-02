@@ -11,5 +11,6 @@
   "data_dirs": ["citygml"],
   "map": { "tiles": "osm", "center": [40.7527, -73.9772], "zoom": 16 },
   "attribution": "NYC 3D Building Massing Model — NYC Office of Technology and Innovation (DoITT), NYC Open Data",
-  "license": "NYC Open Data Terms"
+  "license": "NYC Open Data Terms",
+  "min_hub": "hub-v1.5.0"
 }
