@@ -10,7 +10,8 @@ maintained via pull requests. **This is a practice repository that is reset
 manually when needed** — designed for learning the editing workflows and tools before
 contributing to production city data.
 
-- **Get started (practice):** open a terminal and paste one line.
+- **Get started (practice):** open a terminal (how:
+  [Getting started, section 1](docs/getting-started.md#1-quick-start-one-command)) and paste one line.
   macOS (Terminal):
   ```
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/4dcitygml/tools/install-v1/install/citygml.sh)" -- 4dcitygml/sample-newyork-station
@@ -21,11 +22,15 @@ contributing to production city data.
   ```
   The shared editing tools are downloaded from `4dcitygml/tools`, verified, and
   connect to this city; you do not need to clone the repository (the tools create
-  your own copy) and after the first time a desktop icon opens them. The line
+  your own copy). How to open them next time, with or without a desktop icon:
+  [Getting started, section 7](docs/getting-started.md#7-next-time). The line
   installs or starts; running it again is always safe. Newer versions are offered
   inside the tools. If you installed with the starter kit before September 2026,
   run the line once more (the old installation stays in place and can be deleted).
   Step by step, including working with Git directly: [Getting started](docs/getting-started.md).
+- **Practice photos:** `docs/practice-photos/` holds four facade photos of this area
+  (CC0 / public domain) for practising the texture editor; sources in
+  [CREDITS.md](docs/practice-photos/CREDITS.md).
 - **Data source & license:** see `4dcitygml.json` (`attribution` / `license`).
   NYC 3D Building Massing Model — NYC Office of Technology and Innovation
   (DoITT), NYC Open Data.
@@ -61,8 +66,9 @@ without affecting production data.
 - **Every pull request is reviewed:** the maintainer checks every proposal
   before it is merged.
 - **Manual reset:** only a maintainer, after entering the confirmation word
-  `RESET`, opens a pull request that returns the data to `baseline`; the history
-  stays. Open proposals that change nothing but data are closed with a note.
+  `RESET`, prepares a pull request that returns the data to `baseline`; the history
+  stays. When it is merged, open proposals that change nothing but data are closed
+  with a note.
 - **After each reset, sync your fork:** If you have a fork of this repository,
   click **Sync fork** → **Update branch** on GitHub before your next practice
   session. Otherwise, edits you made before the reset (which were wiped from
